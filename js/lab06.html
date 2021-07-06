@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>lab 6</title>
+</head>
+<script type='text/javascript'>
+let lera
+  function opened(){
+     window.open("lab05.html"," ","width: 500, height: 700");
+  }
+  function closes(){
+      window.close()
+  }
+  function windoww(){
+    lera = window.open("about:blank"," ","height = 600, width = 600");
+    }
+  function windowww(){
+      lera.document.write("Прівет всем");
+  }
+  function tablee(){
+      document.write("<table border=1>");
+      document.write("<th>свойство</th>");
+      document.write("<th>значение</th>");
+      document.write("<tr><td>1. всю информацию о браузере пользователя</td><td>"+navigator.userAgent+"</td></tr>");
+      document.write("<tr><td>2. версию браузера</td><td>"+navigator.appVersion+"</td></tr>");
+      document.write("<tr><td>3. назване браузера</td><td>"+navigator.appName+"</td></tr>");
+      document.write("<tr><td>4. кодовое название браузера</td><td>"+navigator.appCodeName+"</td></tr>");
+      document.write("<tr><td>5. ОС, которую использует пользователь</td><td>"+navigator.platform+"</td></tr>");
+      document.write("<tr><td>6. включена ли поддержка Java в браузере</td><td>"+navigator.javaEnabled()+"</td></tr>");
+      document.write("<tr><td>7. ширину и высоту экрана</td><td>ширина экрана: "+screen.width+", высота экрана: "+screen.height+"</td></tr>");
+      document.write("<tr><td>8. глубину цвета</td><td>"+screen.colorDepth+"</td></tr>");
+      document.write("<tr><td>9. URL, которые были посещены в данном окне браузера</td><td>"+history+"</td></tr>");
+      document.write("<tr><td>10. URL текущего документа</td><td>"+location.href+"</td></tr>");
+      document.write("<tr><td>11. путь к загруженному документу</td><td>"+location.pathname+"</td></tr>");
+      document.write("<tr><td>12. имя домена загруженного документа</td><td>"+location.host+"</td></tr>");
+  }
+</script>
+<body>
+<input type="button" value="opened window" onclick="opened()">
+<input type="button" value="closed window" onclick="closes()">
+<input type="button" value="window alert" onclick="windoww()">
+<input type="button" value="alert name" onclick="windowww()">
+<input type="button" value="table" onclick="tablee()">
+</body>
+</html>

@@ -1,0 +1,18 @@
+
+ tr:nth-child(odd) td:nth-child(odd) {
+	background: rgb(0, 0, 0);
+}	
+ tr:nth-child(even) td:nth-child(even) {
+	background: rgb(0, 0, 0);
+}
+td, tr {
+   padding: 4%;
+}
+tr:first-child td, tr:last-child td{
+   background:rgb(46, 233, 108) !important;
+   padding:2%;
+} 
+tr td:first-child, tr td:last-child {
+	background:rgb(46, 233, 108) !important;
+	width:20px;
+}

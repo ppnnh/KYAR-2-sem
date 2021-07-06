@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>lab2</title>
+    </head>
+    <style>
+        .shadow1{background:rgb(243, 232, 189);
+        box-shadow: 4px 4px 5px rgba(122,122,122,0.5) ;
+        padding:10px;
+        }
+        .shadow2{background:rgb(235, 243, 189);
+        box-shadow: -4px -4px 8px rgba(179, 174, 174, 0.5) ;
+        padding:10px;
+        }
+    </style>
+    <script>
+        function drawgist(){
+            var canvas=document.getElementById('draw');
+            var x=canvas.getContext('2d');
+            x.moveTo(20,100);
+            x.lineTo(20,100);
+            x.font='15px Arial';
+            x.fillStyle='red';
+            x.fillText("Гистограмма", 100, 30);
+
+            x.fillStyle='blue';
+            x.fillRect(10, 250,60,-50);
+            x.font='10px Arial';
+            x.fillStyle='black';
+            x.fillText("Сквидвард",15,260);
+
+            x.fillStyle='pink';
+            x.fillRect(70,250,60,-70);
+            x.fillStyle='black';
+            x.fillText("Патрик",85,260);
+
+            var grad=x.createLinearGradient(0,0,0,150);
+            grad.addColorStop(0.0,"black");
+            grad.addColorStop(1.0,"red");
+            x.fillStyle=grad;
+            x.fillRect(130,250,60,-150);
+            x.fillStyle='black';
+            x.fillText("Крабс",150,260);
+
+            x.shadowOffsetX=3;
+            x.shadowOffsetY=3;
+            x.shadowBlur=5;
+            x.shadowColor='black';
+            var img=document.getElementById('image1');
+            x.drawImage(img,190,150);
+            x.fillText("Губка Боб",205,260);
+
+        }
+        function drawdiagr(){
+            var canvas=document.getElementById('draw1');
+            var x=canvas.getContext('2d');
+            x.font='15px Arial';
+            x.fillStyle='red';
+            x.fillText("Диаграмма", 60, 30);
+            x.font='10px Times';
+
+            x.shadowOffsetX=3;
+            x.shadowOffsetY=3;
+            x.shadowBlur=5;
+            x.shadowColor='black';
+            x.fillStyle = "blue";
+            x.beginPath();
+            x.arc(100, 100, 50, 0, Math.PI/180*20, false);
+            x.lineTo(100,100);
+            x.fill();
+            x.fillText("Синий", 150,110);
+
+            x.fillStyle = "gold";
+            x.beginPath();
+            x.arc(100, 100, 50, Math.PI/180*20, Math.PI/180*80, false);
+            x.lineTo(100,100);
+            x.fill();
+            x.fillText("Золотой", 130,150);
+
+            x.fillStyle = "green";
+            x.beginPath();
+            x.arc(100, 100, 50, Math.PI/180*80, Math.PI/180*170, false);
+            x.lineTo(100,100);
+            x.fill();
+            x.fillText("Зеленый", 20,150);
+
+            x.fillStyle = "red";
+            x.beginPath();
+            x.arc(100, 100, 50, Math.PI/180*170, Math.PI/180*230, false);
+            x.lineTo(100,100);
+            x.fill();
+            x.fillText("Красный", 10,70);
+
+            x.fillStyle = "yellow";
+            x.beginPath();
+            x.arc(100, 100, 50, Math.PI/180*230, Math.PI/180*360, false);
+            x.lineTo(100,100);
+            x.fill();
+            x.fillText("Желтый", 140,70);
+        }
+    </script>
+    <body>
+        <canvas class="shadow1" id='draw' width='300' height='300'>   </canvas>
+        <img id='image1' src='i.jpg' width="60" height="100" style='display:none;'/>           
+        <input type="button" value="нарисовать гистограмму" onclick ="drawgist()"/>
+        <canvas  class="shadow2" id='draw1' width='200' height='200'></canvas>
+        <input type="button" value="нарисовать диаграмму" onclick ="drawdiagr()"/>
+    </body>
+</html>

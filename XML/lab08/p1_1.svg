@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2021 (64-Bit Оценочная версия) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="210mm" height="297mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 21000 29700"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str0 {stroke:#E78985;stroke-width:180;opacity:0.5;stroke-miterlimit:22.9256}
+    .str2 {stroke:#4E3859;stroke-width:100;stroke-miterlimit:22.9256}
+    .str1 {stroke:#138299;stroke-width:300;stroke-opacity:0.5;stroke-miterlimit:22.9256}
+    .fil0 {fill:#F54268}
+    .fil1 {fill:#A89283}
+    .fil2 {fill:#498892}
+   ]]>
+  </style>
+ </defs>
+ <g id="Слой_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <rect class="fil0 str0" x="7000" y="4000" width="7498.15" height="7955.36"/>
+  <rect class="fil1 str1"  x="5000" y="9661.26" width="7909.64" height="7000"/>
+  <ellipse class="fil2 str2" cx="8046.83" cy="18553.88" rx="3000" ry="3000"/>
+    <line x1="8000" y1="3000" x2="15000" y2="5000" stroke-width="500" stroke="green"/>
+    <line x1="5000" y1="8000" x2="10000" y2="7000" stroke-width="500" stroke="gold"/>
+    <line x1="10000" y1="15000" x2="17000" y2="12000" stroke-width="300" stroke="blue"/>
+ </g>
+</svg>

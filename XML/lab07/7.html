@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>lab7</title>
+    </head>
+
+    <body>
+        <font color="red" size="5">1 task</font>
+        <svg height="350" width="600">
+            <rect x="100" y="100" width="200" height="200" fill= "green" stroke= "yellow" stroke-width="6">
+                <animate attributeName="x" from="100" to="300" dur="2s" begin="mouseover"/>
+                <animate attributeName="width" from="200" to="300" dur="2s" begin="mouseover"/>
+                <animate attributeName="fill" from="green" to="red" dur="2s" begin="mouseover"/>
+                <animate attributeName="stroke-width" from="6" to="15" dur="2s" begin="10s"/>
+             </rect>
+        </svg>
+
+        <br>
+        <font color="red" size="5">2 task</font>
+        <svg height="300" width="500">
+		<ellipse rx="100" ry="30"  cx="200" cy="150" fill="pink" stroke="purple" stroke-width="3" transform="rotate(-25 120 80)">
+        <animateTransform attributename="transform" attributeType="XML" type="rotate" from="-25 120 80" to="-10 200 180" begin="mousedown" dur="2s"/>
+        </ellipse>
+        </svg>
+
+        <br>
+        <font color="red" size="5">3, 5 task</font>
+        <svg height="300" width="400">
+            <circle cx="150" cy="150" r="50" stroke-dasharray="5" stroke-dashoffset="314px" stroke="purple" fill="pink" stroke-width="7">
+                <animate attributeName="stroke-dasharray" from="5" to="0" dur="3s" begin="mouseover"/>
+            </circle>
+        </svg>
+    </body>
+</html>

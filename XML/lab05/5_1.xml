@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<poit>
+    <person>
+        <name>Шарилов Павел</name>
+        <score>8</score>
+        <birth>2003</birth>
+    </person>
+    <person>
+        <name>Шкода Кристина</name>
+        <score>6</score>
+        <birth>2003</birth>
+    </person>
+    <person>
+        <name>Бутурля Роман</name>
+        <score>5</score>
+        <birth>2002</birth>
+    </person>
+</poit>

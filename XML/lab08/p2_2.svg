@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2021 (64-Bit Оценочная версия) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="210mm" height="297mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 21000 29700"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str2 {stroke:#37582a;stroke-width:500;stroke-miterlimit:22.9256}
+    .str1 {stroke:#2b48a9;stroke-width:100;stroke-miterlimit:22.9256}
+    .str0 {stroke:#b8b938;stroke-width:120;stroke-miterlimit:22.9256}
+    .str3 {stroke:#284925;stroke-width:150;stroke-miterlimit:22.9256;stroke-dasharray:1500.000000 750.000000}
+    .fil3 {fill:none}
+    .fil2 {fill:white}
+    .fil0 {fill:#275ba5}
+    .fil4 {fill:#24ab82}
+    .fil1 {fill:#f85849}
+   ]]>
+  </style>
+    <clipPath id="id0">
+     <path d="M3140.59 5566.93l14373.06 0 1040.16 14396.64 -14373.06 0 -1040.16 -14396.64z"/>
+    </clipPath>
+   <mask id="id1">
+  <linearGradient id="id2" gradientUnits="userSpaceOnUse" x1="9176.19" y1="6802.65" x2="5362.97" y2="2872.86">
+   <stop offset="0" style="stop-opacity:1; stop-color:gold"/>
+   <stop offset="1" style="stop-opacity:0; stop-color:black"/>
+  </linearGradient>
+    <rect style="fill:url(#id2)" x="3190.46" y="2427.43" width="12930.69" height="10252.91"/>
+   </mask>
+   <clipPath id="id3">
+    <path d="M15273.55 316.09l2185.35 1523.49 2185.35 1523.51 -834.73 2465.08 -834.72 2465.08 -2701.25 0 -2701.23 0 -834.74 -2465.08 -834.73 -2465.08 2185.35 -1523.51 2185.35 -1523.49z"/>
+   </clipPath>
+     <clipPath id="id4">
+      <path d="M11794.51 5996.28c1526.55,887.97 2128.45,846.52 6831.71,373.22l-333.32 984.34c-158.5,218.14 -303.17,340 -606.5,595.37l24.84 344.04 -2437.69 0 -2701.23 0 -777.81 -2296.97z"/>
+     </clipPath>
+     <clipPath id="id5">
+      <path d="M15273.55 316.09l2185.35 1523.49 2185.35 1523.51 -834.73 2465.08 -834.72 2465.08 -2701.25 0 -2701.23 0 -834.74 -2465.08 -834.73 -2465.08 2185.35 -1523.51 2185.35 -1523.49z"/>
+     </clipPath>
+     <mask id="id6">
+  <linearGradient id="id7" gradientUnits="userSpaceOnUse" x1="9461.2" y1="6250.22" x2="5342.52" y2="2191.54">
+   <stop offset="0" style="stop-opacity:1; stop-color:white"/>
+   <stop offset="1" style="stop-opacity:0; stop-color:white"/>
+  </linearGradient>
+      <rect style="fill:url(#id7)" x="3190.74" y="1619.16" width="13349.5" height="11068.84"/>
+     </mask>
+ </defs>
+ <g id="Слой_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_2136699175808">
+   <g style="clip-path:url(#id0)">
+    <image x="3140.59" y="5566.93" width="15413.22" height="14396.64" xlink:href="p2_Images\p2_ImgID1.png"/>
+   </g>
+  </g>
+  <ellipse class="fil0 str0" cx="13000.14" cy="12175.88" rx="5692.19" ry="4937.8"/>
+  <polygon class="fil1 str1" style="mask:url(#id1)" points="3200.46,2437.43 16111.15,2437.43 16111.15,12670.34 3200.46,12670.34 "/>
+  <g style="clip-path:url(#id3)">
+   <polygon class="fil2" points="8362.85,-2223.91 22184.25,-2223.91 22184.25,10833.25 8362.85,10833.25 "/>
+   <g id="Слой_x0020_1_0">
+    <metadata id="CorelCorpID_1Corel-Layer"/>
+    <g id="_2136699175808">
+    </g>
+    <g style="clip-path:url(#id4)">
+     <image x="3141.77" y="5568.74" width="15749.89" height="14394.83" xlink:href="p2_Images\p2_ImgID2.png"/>
+    </g>
+    <g style="clip-path:url(#id5)">
+    </g>
+    <path class="fil0 str0" d="M10464.32 17112.9c3134.97,-2.61 5682.85,-2220.23 5679.01,-4938.74 7.39,-2723.84 -2552.65,-4939.32 -5686.68,-4936.93 -3134.43,2.98 -5692.88,2222.28 -5688.44,4942.72 -8.45,2716.82 2562.45,4935.74 5696.11,4932.95z"/>
+    <path class="fil1 str1" style="mask:url(#id6)" d="M3200.74 2435.65c4061.18,-3.41 4061.18,-3.41 8120.69,0.75 1807.89,-707.61 1807.89,-707.61 5152.7,-807.24 56.11,4489.76 56.11,4489.76 -358.75,6964.87 -2.99,2038.4 -2.99,2038.4 -4.19,4076.3 -6454.1,0.88 -6454.1,0.88 -12905.41,7.67 -3.06,-5115.75 -3.06,-5115.75 -5.04,-10242.35z"/>
+   </g>
+  </g>
+  <polygon class="fil3 str2" points="15273.55,316.09 17458.9,1839.58 19644.25,3363.09 18809.52,5828.17 17974.8,8293.25 15273.55,8293.25 12572.32,8293.25 11737.58,5828.17 10902.85,3363.09 13088.2,1839.58 "/>
+  <path class="fil4 str3" d="M5163.29 9685.02c324.63,492.4 661.21,986.55 1024.09,1467.56 364.64,483.35 766.02,946.21 1192.24,1392.75 904.97,-14.49 1880.45,-85.06 2603.99,407.93 715.06,487.2 1012.41,1317.91 1217.93,1987.73 -171.65,-393.45 -366.8,-862.35 -773.03,-1058.43 -466.34,-225.1 -1080.13,-61.56 -1681.5,156.9 206.69,397.06 388.44,780.82 581.52,1118.78 169.11,296.02 363.16,493.61 564.01,572.06 -447.24,16.89 -939.91,-27.88 -1461.99,-149.66 -559.66,-130.55 -1136.18,-327.07 -1737.55,-533.43 -524.31,287.23 -1221.99,396.7 -1543.71,894.3 -560.29,866.59 -559.35,2109.62 -753.18,3230.83 -58.39,-836.37 -107.99,-1662.98 -110.94,-2472.92 -2.88,-789.33 44.38,-1550.84 105.1,-2279.81 -500.94,266.73 -957.25,549.98 -1401.26,815.87 -770.15,461.2 -1588.08,961.88 -2148.59,1585.84 238.21,-1112.75 548.45,-2102.95 1114,-2872.39 538.83,-733.09 1309,-1223.77 2154.43,-1354.11 5.83,-462.25 92.48,-951.23 286.1,-1432.58 201.36,-500.62 479.93,-984.82 768.34,-1477.22z"/>
+ </g>
+</svg>

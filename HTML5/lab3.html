@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>laba3</title>
+    <style type="text/css">
+        form{width: 300px}
+        input:required{border: 1px solid red;}
+
+        nav::after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 0;
+}
+    </style>
+        <script>
+            function wwrite(){
+        let name = document.getElementById('name').value;
+        let surname = document.getElementById('surname').value;
+        let email = document.getElementById('email').value;
+        let tel = document.getElementById('tel').value;
+        let kurs = document.getElementsByName("kurs"); 
+	var str = "";
+	for(var i = 0; i < kurs.length; i++)
+	{
+	if(kurs[i].checked === true){
+   		 str+=kurs[i].value+" ";
+   		 break;
+   		}	
+	}
+                e = document.getElementById('foot');
+                e.innerHTML= 'Имя: ' + name + ' ' + surname +'</br>' + 'E-mail: ' + email +'</br>' + 'Телефон: ' + tel + ' ' +'</br>' + 'Курс: '+ str;
+        }
+    
+        </script>
+</head>
+<body>
+    <header>"HEADER"</header>
+    <nav>
+        <figure><img src="i.jpg" style="width: 100px; height: 100px;">
+            <figcaption>sponge bob</figcaption></figure>
+        <a href="">Ссылка 1</a>|
+    <a href="">Ссылка 2</a> |
+    <a href="">Ссылка 3</a> |
+    <a href="">Ссылка 4</a></nav>
+
+    <form id="form">
+        <fieldset>
+            <legend>Форма</legend>
+            <p><label>Имя:</label><input type="text" id="name" autofocus placeholder="Имя" required></p>
+            <p><label>Фамилия:</label><input type="text" id="surname" placeholder="Фамилия"></p>
+            <p><label>E-mail:</label><input type="email" id="email" placeholder="E-mail"></p>
+            <p><label>Телефон:</label><input type="tel" id="tel" placeholder="Телефон" pattern="[0-9]+"></p>
+            Курс:
+			<input type='radio' name="kurs" value='1' /> 1
+			<input type='radio' name="kurs" value='2' /> 2
+			<input type='radio' name="kurs" value='3' /> 3
+			<input type='radio' name="kurs" value='4' /> 4
+            <br>
+            <input type="submit" value="submit">
+            <input type="reset" value="Reset">
+            <input type='button' value='Изменение футера' onclick='wwrite()' />
+        </fieldset>
+    </form>
+    <footer id="foot">
+    </footer>
+</body>
+</html>

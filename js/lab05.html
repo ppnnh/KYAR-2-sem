@@ -1,0 +1,126 @@
+<html>
+<head>
+<title>Моя первая страница</title>
+</head>
+<style>
+    .m {
+    display: block;
+    background-color:rgba(93, 253, 45, 0.479);
+    width: 40px;
+      top: 37px;
+      left:0px;
+      color: black;
+  }
+  
+</style>
+     
+<script type='text/javascript'>
+    function t1(){
+        var tags="length= "+document.all.length+"\n";
+    for(let i=0;i<(document.all.length);i++){
+          tags+="Tag " + document.all[i].tagName + " number " + i+"\n";
+     } 
+     alert(tags);
+    }       
+    function t2(){
+        var tags="length= "+document.body.childNodes.length+"\n";
+    for(let i=0;i<(document.body.childNodes.length);i++){
+          tags+="Tag " + document.body.childNodes[i].tagName + " number " + i+"\n";
+     } 
+     alert(tags);
+    }    
+    function t3(){
+            let all_1 = document.querySelectorAll('span');
+            alert("Первый элемент span " + all_1[0].innerHTML+"\n");
+            let all_2 = document.getElementsByTagName('span');
+            alert("Первый элемент span " + all_2[0].innerHTML+"\n");
+            let all_3 = document.getElementById('id');
+            alert("Первый элемент span " + all_3.innerHTML+"\n");
+    }    
+    function t4(){let average_marks = 0;
+            let all_1 = document.getElementsByClassName('mark');
+            for (let i = 0; i < all_1.length; i++) {
+                average_marks += parseInt( all_1[i].innerHTML);
+            }
+            average_marks = average_marks/5;
+            alert(average_marks);
+
+            let all_2 = document.getElementsByTagName('span');
+            all_2[1].innerHTML = all_2[1].innerHTML +" средний балл  = " + average_marks;
+        }
+    function t5(){
+        window.close("lab05.html");
+    }
+</script>
+<body bgcolor="yellow" align="justify">
+<input type='button' value='1 task'  onclick='t1()'>
+<input type='button' value='2 task'  onclick='t2()'>
+<input type='button' value='3 task'  onclick='t3()'>
+<input type='button' value='4 task'  onclick='t4()'>
+<input type='button' value='close'  onclick='t5()'>
+<h1 align="center">Я, <a href="лаба1.2.html">Буранко Валерия Дмитриевна</a>, изучаю <font color="red">HTML</font> и CSS</h1>
+<h2>Цитаты</h2>
+
+<h3>Абзац 1</h3>
+<font face="times" size="2" color="gray">Вселенная знает, как будет лучше</font> 
+<h3>Абзац 2</h3>
+<font face="georgia" size="4" color="green">Используй тот талант, что у тебя есть: если бы в лесу пели только те птицы, что поют лучше всех, там было бы очень тихо…</font> 
+<h3>Абзац 3</h3>
+<font face="arial" size="3" color="blue">Глубокая река даже не замечает, что в нее кинули камень</font> 
+
+<b><h2>Elemets</h2></b>
+<ol type="1"><li>element 1</li>
+    <ul type="disc"><li>element 1.1</li>
+        <span  style="color:rgb(43, 226, 128);"><li>element 1.2</li></span></ul>
+<li>element 2</li>
+    <ul type="square"><li>element 2.1</li>
+        <span style="color:rgb(43, 226, 128);"> <li>element 2.2</li></span>
+        <li>element 2.3</li></ul> 
+<li>element 3</li>
+    <ul type="circle"><li>element 3.1</li>
+        <span id="id" style="color:rgb(43, 226, 128);"><li>element 3.2</li></span></span></ul> 
+</ol>
+
+<h2>Таблица</h2>
+<table border>
+    <td style="text-align:right">ФИО</td> <td colspan="3" style="text-align:center"><a href="лаба1.2.html">Буранко Валерия Дмитриевна</a></td>
+    <tr>
+        <td style="text-align:right">Своё фото</td> <td colspan="3" style="text-align:center">Адрес: ул.Белорусская, д.21, ком.313</td>
+    </tr>
+    <tr>
+        <td rowspan="6" style="text-align:center">1 семестр<p> 2020/2021</p><p> уч.года</p></td> 
+         <td style="text-align:center">Дата</td> 
+         <td style="text-align:center">Предмет</td>
+         <td style="text-align:center">Оценка</td>
+    </tr>
+    <tr>
+         <td style="text-align:right">31.12.2020</td> 
+         <td style="text-align:center">ОАиП</td> 
+         <td class='mark' style="text-align:center">9</td>
+    </tr>
+    <tr>
+         <td style="text-align:right">05.01.2021</td> 
+         <td style="text-align:center">Физика</td>
+         <td class='mark' style="text-align:center">7</td>
+    </tr>
+    <tr>
+         <td style="text-align:right">11.01.2021</td> 
+         <td style="text-align:center">ОИТ</td> 
+         <td class='mark' style="text-align:center">6</td>
+    </tr>
+    <tr>
+         <td style="text-align:right">16.01.2021</td> 
+         <td style="text-align:center">Математика</td> 
+         <td class='mark' style="text-align:center">8</td>
+    </tr>
+    <tr>
+         <td style="text-align:right">22.01.2021</td> 
+         <td style="text-align:center">АЛОЦВМ</td>
+         <td class='mark' style="text-align:center">8</td>
+    </tr>
+</table>
+<p class="m"><a href="C:\Users\Lenovo\Desktop\ОИТ лабы\html\итоговаялаба.html">назад</a></p>
+
+</body>
+</html>
+   

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="SPECIALIZATION">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="SPECIALIZATION" type="xs:string"/>
+                <xs:element name="POIT" type="xs:string"/>
+                <xs:element name="UNIVERSITY" type="xs:string"/>
+                <xs:element name="PASSING" type="xs:string"/>
+                <xs:element name="PAGES" type="xs:string"/>
+                <xs:element name="CITY" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

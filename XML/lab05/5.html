@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>lab5</title>
+
+        <script type="text/javascript">
+
+            function load(file)
+            {
+                console.log(file[0]);
+                let f = file[0];
+
+                let reader = new FileReader();
+                reader.readAsText(f);
+
+                reader.onload = function()
+                {
+                    let parser = new DOMParser();
+                    let xmlDOM = parser.parseFromString(reader.result, "text/xml");
+
+                    console.log(xmlDOM);
+                    let str = xmlDOM.getElementsByTagName("person")[0];
+
+                    document.getElementById("text").innerHTML += "<br><br>";
+
+                    for(let i = 0; i <str.childElementCount;i++)
+                    {
+                        document.getElementById("text").innerHTML = document.getElementById("text").innerHTML + str.children[i].textContent + "<br>";
+                    }                  
+                }
+            }
+            
+        </script>
+    </head>
+
+    <body>
+        <input type="file" onchange="load(this.files)"><br><br>
+        <div id="text"></div>
+    </body>
+</html>

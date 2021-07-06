@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>lab 8</title>
+<script type='text/javascript'>
+    function f1(element){
+        element.style.color="green";
+    }
+    function f2(element){
+        element.style.color="black";
+    }
+    function f3(element){
+        element.style.fontSize="50px";
+    }
+    function f4(){
+        document.getElementById('img1').src="vozvraschenie-navsegda.orig.jpg";
+    }
+    function f5(){
+        document.getElementById("text1").innerHTML="<img src='vozvraschenie-navsegda.orig.jpg' heigth='300px' width='500px'>";
+    }
+    function f6(element){
+        element.style.width="600px";
+    }
+    function f7(element){
+        element.style.width="500px";
+    }
+    function f8(txt){
+        txt.style.border="7px double red";
+    }
+    function f9(txt){
+        txt.style.border="0px";
+    }
+</script>
+</head>
+<body>
+    <font size="7" color="red">Задание 1</font>
+    <p onmouseover="f1(this)" style="font-size: 30px;" onmouseout="f2(this)" > Создать программу на JS, изменяющую цвет слова в тексте  при наведении курсора мыши (событие Onmouseover, свойство style.color).</p>
+   
+    <font size="7" color="red">Задание 2</font>
+    <p onclick="f3(this)" style="font-size: 30px;"> Создать программу на JS, изменяющую размер шрифта слова  щелчком мыши (событие Onclick, свойство style.fontSize).</p>
+    
+    <font size="7" color="red">Задание 3</font>
+    <br><font size="6">Создать программу на JS замены картинки на другую при  щелчке мышью с помощью метода getElementById и свойства src</font>
+    <br><img src="vehicles-boat-1435.jpg" style="height: 400px; width: 600px;" id="img1" onclick="f4()">
+    
+    <br><font size="7" color="red">Задание 4</font>
+    <br><p onclick="f5()" id="text1">
+        <font size="6">Создать программу на JS, заменяющую текст изображением, с использованием метода getElementById и свойства innerHTML.</font></p>
+    
+        <br> <font size="7" color="red">Задание 5</font>
+    <br><font size="6"> Создать эффекты увеличения размера рисунка (свойство width) при наведении на него курсора мыши и возврата к первоначальному размеру при уходе курсора с рисунка (событие onmouseout) </font>
+    <br><img src="vehicles-boat-1435.jpg" onmouseover="f6(this)" onmouseout="f7(this)" id="img2" heigth="300px" width="500px">
+    
+    <br><font size="7" color="red">Задание 6</font>
+    <br><p id="txt" ondblclick="f8(this)" onclick="f9(this)" ><font size="6">Нарисовать цветную рамку произвольного стиля вокруг любого абзаца при двойном щелчке (событие dblclick) на абзац</font></p>
+
+</body>
+</html>

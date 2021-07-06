@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Animation</title>
+	<style>
+		@-webkit-keyframes animcircle {
+			50% {margin-left:700px; border-radius: 0%; }
+			100% {margin-left:0px;margin-top:0px; border-radius: 50%;}
+		}
+			@-webkit-keyframes animsquare {
+			50% {margin-left:400px; background: blue; border-radius: 50%;}
+			100% {margin-left:0px; background:  #f447ff;border-radius: 0%;}
+		}
+			@-webkit-keyframes animsrectangle {
+			30% {margin-left:200px; margin-top: 200px; background:#4da1f7;}
+			60% {margin-left:0px; margin-top: 200px; background: #f447ff;}
+			100% {margin-left:0px; margin-top: 0px; background:#4da1f7;}
+		}
+		body:hover .circle {
+			animation: animcircle 10s infinite;
+		}
+		body:hover .square  {
+			animation: animsquare 5s infinite;
+		}
+		.circle {
+			width: 100px; 
+			height: 100px;
+			background: #83A7C9;
+			border-radius: 50%;
+			}
+		.square {
+	    width: 120px;
+	    height: 120px;
+	    background: #f447ff;
+	  
+		}
+		.rectangle {
+	    width: 220px;
+	    height: 120px;
+	    background: #4da1f7;
+	    animation: animsrectangle 5s infinite;
+		}
+	</style>
+</head>
+<body>
+	<a href="4 задание.html">4 задание</a>
+	<div>
+		<div class="circle"></div>
+		<div class="square"></div>
+		<div class="rectangle"></div>
+	</div>
+
+</body>
+</html>

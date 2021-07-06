@@ -1,0 +1,32 @@
+body
+{
+   height: 200px;
+   background: linear-gradient(45deg, #EECFBA, #C5DDE8);
+}
+
+footer,p
+{
+   font-size:	150%;
+   font-family: Courier;
+}
+
+#search 
+{
+   margin: .4rem 0;
+}
+
+#ko, #ko2 
+{
+   margin: .4rem;
+}
+
+small, figure
+{
+font-family: Courier;
+}
+header
+{
+   font-size:	200%;
+   font-family: Courier;
+   text-align: center;
+}

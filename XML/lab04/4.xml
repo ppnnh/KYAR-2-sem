@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="4.xsl"?>
+<poit>
+    <person>
+        <name>Шулаков Андрей</name>
+        <score>7</score>
+        <birth>2003</birth>
+    </person>
+    <person>
+        <name>Ивановский Егор</name>
+        <score>6</score>
+        <birth>2003</birth>
+    </person>
+    <person>
+        <name>Титова Анастасия</name>
+        <score>5</score>
+        <birth>2002</birth>
+    </person>
+</poit>
+

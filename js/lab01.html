@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>laba1</title>
+ <style>
+   #first input {
+     background-color: rgb(95, 42, 165);
+     border-radius: 10px;
+     height: 30px;
+     color:rgb(0, 234, 255);
+   }
+   
+ </style>
+</head>
+<body>
+   <script type='text/javascript'>
+      //1 zadanie
+      function welcome() {
+        alert("Вас приветствует учебный центр");
+      }
+      function name1() {
+          var x=prompt('Введите имя','Имя');
+         alert('Добро пожаловать на наши курсы, '+x);
+      }
+      
+     function web(){
+     if (confirm('Хотите стать Web-дизайнером?')) {
+          alert('Учите стили CSS и JavaScript!');
+      }
+      else {
+          alert('Упускаете время!');
+      }
+      }
+      //2 zadanie
+      function sum1() {
+        var result; 
+        var y=10;
+          var z=5;
+         result=z+y; 
+         alert(result);
+      }
+      function sum2() {
+        var result; 
+        var y='10';
+          var z='5';
+         result=z+y; 
+         alert(result);
+      }
+      function sum3() {
+        var result; 
+        var y=22;
+          var z='5';
+         result=z+y; 
+         alert(result);
+      }
+      function sum4() {
+        var result; 
+        var y='22';
+          var z=5;
+         result=z+y; 
+         alert(result);
+      }
+      function conclusion() {
+        alert("Результатом сложения строки и числа всегда будет СТРОКА");
+      }
+      //3 zadanie
+      function rest() {
+          var t=3;
+          var o=8;
+          res1=(25*t+o)/2;
+          alert('Результат1='+res1);
+          var e=4;
+          var g=9;
+          res2=(18*g-87*e)-g*e;
+          alert('Результат2='+res2);
+          res=res2%res1;
+          alert('Результат='+res);
+      }
+      //4 zadanie
+      function operasions() {
+          s= prompt('Введите число ','Число');
+          if(s<20 || s>40 && s!=15 && s%5==0) {
+            alert('Правильное значение');
+          }
+          else {
+              alert('Неправильное значение');
+          }
+      }
+      //5 zadanie
+      function compare(){
+        A = prompt('Введите первое число ','Число');
+        B=prompt('Введите второе число ','Число');
+        if(A>B)
+        alert('A больше B');
+        else if(A<B)
+        alert('A меньше B');
+        else alert('A равно B');
+
+        a = prompt('Введите a ','Число');
+        b=prompt('Введите b ','Число');
+        c = prompt('Введите c ','Число');
+        d=prompt('Введите d ','Число');
+        res1=(a+b);
+        res2=(c-d);
+        (res1>res2)? alert("(a+b) больше, чем (с-d)"):alert("(a+b) меньше, чем (с-d)")
+      }
+      //6 zadanie
+      function day(){
+          f=prompt('Введите день недели по счету');
+          switch (f) {
+              case '1':
+                  alert('Monday');
+                  break;
+              case '2':
+                  alert('Tuesday');
+                  break;
+              case '3':
+                  alert('Wednesday');
+                  break;
+              case '4': 
+                  alert('Thursday');
+                  break;
+              case '5': 
+                  alert('Friday');
+                  break;
+              case '6':
+                  alert('Saturday');
+                  break;
+              case '7': 
+                  alert('Sunday');
+                  break;
+          }
+      }
+      //7 zadanie
+      function error(){
+        try { 
+        var HELLO; // ошибка, переменная не определена!
+        alert(HELLO);
+        } catch(e) {
+        alert('Ошибка ' + e.name + ":" + e.message + "\n" + e.stack); 
+        }
+      }
+
+   </script>
+   <div id="first"><input type='button'  background.color="red" value='приветствие' onclick='welcome()' />
+  <input type='button' value='приветствие с именем' onclick='name1()' />
+   <input type='button' value='вопрос' onclick='web()' />
+   <input type='button' value='сложение чисел' onclick='sum1()' />
+   <input type='button' value='сложение строк' onclick='sum2()' />
+   <input type='button' value='сложение числа и строки' onclick='sum3()' />
+   <input type='button' value='сложение строки и числа' onclick='sum4()' />
+   <input type='button' value='вывод' onclick='conclusion()' />
+   <input type='button' value='остаток от деления' onclick='rest()' />
+   <input type='button' value='ввод числа' onclick='operasions()' />
+   <input type='button' value='сравнение' onclick='compare()' />
+   <input type='button' value='день недели' onclick='day()' />
+   <input type='button' value='ошибка' onclick='error()' /></div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+.container-1
+{
+    display:flex;
+    margin-top: 15%;
+}
+
+.container-1 div
+{
+    padding: 10px;
+    border-right: 1px solid red;
+}
+.box-1
+{
+    flex:1;
+}
+.box-2
+{
+    flex:1;
+}
+.box-3
+{
+    flex:1;
+}
+.box-4
+{
+    flex:1;
+}
+.box-5
+{
+    flex:1;
+}
+a:hover
+{
+    color:red
+}
+table {
+    background: red; 
+    color: black; 
+    }
+    td {
+    background: white; 
+    }
+
+    @media screen and (max-width: 1024px){
+        #block{
+        flex-direction: column-reverse;
+        }
+        #part_1{
+        background-color: white;
+        }
+        img{
+        max-width: 87%;
+        }
+        }

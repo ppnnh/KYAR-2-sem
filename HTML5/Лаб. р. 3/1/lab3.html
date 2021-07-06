@@ -1,0 +1,56 @@
+<html>
+
+<body>
+    <style>
+        body {
+            background-color: #F5DEB3;
+        }
+    </style>
+    </style>
+    <header>
+        <form >
+            <br>
+            <label for="email">E-mail</label>
+            <input type="email" onchange="addMail()" id="m" name="email" required>
+            <br>
+            <br>
+            <label for="tel">Phone</label>
+            <input type="tel" id="ph" onchange="addPhone()" id="ph" name="telef">
+
+        </form>
+    </header>
+    <br>
+    <input type="number" min=0 max=100 step="2" novalidate>
+    </br>
+    <br>
+    <input type="range" min="0" max="100" step="10">
+    </br>
+    <br>
+    <input type="search" name="q" placeholder="Поиск по сайту">
+    </br>
+    <br>
+    <input type="color" name="q">
+    </br>
+
+    <footer id="inf">
+        <br> Почиковская Юлия 1 к 5 гр</br>
+    </footer>
+    <nav>
+        </br><img src="img1.jpg" width="8%" />
+    </nav>
+</body>
+<script>
+
+    footer = document.getElementById("inf");
+    phone = document.getElementById("ph");
+    email = document.getElementById("m");
+    function addPhone() {
+        footer.innerHTML += "Телефон: " + phone.value + "<br>";
+    }
+    function addMail() {
+        footer.innerHTML += "Электронная почта: " + email.value + "<br>";
+    }
+    
+</script>
+
+</html>

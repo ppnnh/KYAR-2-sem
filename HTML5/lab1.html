@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>lab1</title>
+    </head>
+    <script>
+        function getCoordinates() {
+        navigator.geolocation.getCurrentPosition(showCoordinates);
+        }
+        function showCoordinates(position) {
+        alert("Широта:" + position.coords.latitude + "   Долгота:" + position.coords.longitude);
+        }
+        </script>
+    <body>
+        <h1 align="center">Я, <mark>Буранко Валерия Дмитриевна</mark>, изучаю HTML5</h1>
+        <video src="C:\Users\Lenovo\Documents\ViberDownloads\0-02-0a-915fa35fba694b56ee0d44632b0ad0d8991b81d73a074745fa599ba8630a326e_2b0177c3.mp4" width="500" height="800" controls="contrpls"></video>
+        <audio src="C:\Users\Lenovo\Desktop\музычка\Markul - Отрицание.mp3" controls="controls"></audio>
+        <p>Для считывания координат нажмите на кнопку</p>
+        <input type="button" value=" Координаты" onclick ="getCoordinates()">
+    </body>
+</html>

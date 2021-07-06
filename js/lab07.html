@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>lab 7</title>
+<script type='text/javascript'>
+    function print1(){
+        let h=document.forms.f1;
+        document.write(h.elements.name1.value+'<br>');
+        document.write("Студент "+h.elements.lastname.value+" специальность "+h.elements.spec.value+" курс "+h.elements.course.value+" должен сдавать следующие предметы:<br> <ul> ");
+            for (let i = 0; i < h.elements.subject.length; i++) {
+                if (h.elements.subject[i].checked) {
+                document.write("<li>" + h.elements.subject[i].value + "</li>");
+                }
+            }
+            document.write("</ul>");
+    }
+    let mass=new Array();
+    function pushmass()
+        {
+            let h=document.forms.f1;
+            for (let i = 0; i < h.elements.subject.length; i++) {
+                if (h.elements.subject[i].checked) {
+                mass.push(h.elements.subject[i].value)
+                }
+            }
+        }
+        function mass1() 
+        {
+            
+                let h=document.forms.f1;
+                document.write("<select>");
+            for (let i = 0; i < mass.length; i++) {
+                if (h.elements.subject[i].checked){
+                document.write("<option>" + mass[i] + "</option>");
+                }
+            }
+            document.write("</select>");
+        
+        }
+</script>
+</head>
+<body>
+
+
+<form name="f1">
+    <textarea name="name1" id="" cols="20" rows="3">Факультет информационных технологий</textarea><br>
+
+    <input type="text" name="lastname" placeholder="Фамилия"><br>
+    <input type="text" name="firstname" placeholder="Имя"><br>
+<br>
+    Специальность:
+    <br/><select name="spec">
+        <option>ПОИТ</option>
+        <option>ИСиТ</option>
+        <option>ПОИМБС</option>
+        <option>ДЭВИ</option>
+    </select><br>
+
+    Курс<br>
+    <input type="radio" name="course" value="1"/>1
+    <input type="radio" name="course" value="2"/>2
+    <input type="radio" name="course" value="3"/>3
+    <input type="radio" name="course" value="4"/>4
+
+    <br>Предметы<br><input type="checkbox" name="subject" value="ОИТ"/>ОИТ
+            <input type="checkbox" name="subject" value="ОАП"/>ОАП
+            <input type="checkbox" name="subject" value="История"/>История
+            <input type="checkbox" name="subject" value="Физика"/>Физика
+            <input type="checkbox" name="subject" value="Математика"/>Математика
+
+<br><input type="submit" value="Submit">
+<input type="reset" value="Reset">
+
+<br><input type="button" value="Напечатать" onclick="print1()">
+<input type="button" value="Добавить в массив" onclick="pushmass()">
+</form>    
+<input type="button" value="Вывести список" onclick="mass1()">
+
+</body>
+</html>

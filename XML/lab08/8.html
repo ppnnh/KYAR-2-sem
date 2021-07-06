@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>lab8</title>
+</head>
+
+<body>
+    <font color="red" size="5">1.1, 1.2 task</font>
+    <br>
+    <svg width="620" height="110">
+        <text x="30" y="90" fill="#ED6E46" font-size="50" font-family="'Leckerli One', cursive">This is text1</text>
+    </svg>
+    <svg width="600" height="250">
+        <text x="30" y="80" fill="#46ed4c" font-size="50" rotate="20,0,5,30,10,50,5,10,65,5,35,6" transform="rotate(8)" font-family="'Leckerli One', cursive">This is text2</text>
+    </svg>
+    <svg width="950" height="110">
+        <text x="30" y="90" fill="#da46ed" font-size="50" textLength="900" font-family="'Leckerli One', cursive">This is text3</text>
+    </svg>
+    <svg width="775" height="400">
+        <text x="15" y="90" fill="#ED6E46" font-size="60" font-family="'Leckerli One', cursive">This       <tspan dy="-30" fill="#bbc42a" font-size="50">is</tspan>
+            <tspan dy="50">Text4</tspan>
+        </text>
+    </svg>
+    <svg width="620" height="200">
+        <defs>
+            <path id="testPath" d="M3.858,58.607 c16.784-5.985,33.921-10.518,51.695-12.99c50.522-7.028,101.982,0.51,151.892,8.283c17.83,2.777,35.632,5.711,53.437,8.628 c51.69,8.469,103.241,11.438,155.3,3.794c53.714-7.887,106.383-20.968,159.374-32.228c11.166-2.373,27.644-7.155,39.231-4.449" />
+        </defs>
+        <use xlink:href="#testPath" fill="none" stroke="#7aa20d" stroke-width="2"/>
+        <text x="2" y="5" fill="#765373" font-size="20" font-family="'Lato', sans-serif">
+            <textPath xlink:href="#testPath" startOffset="20%">This is text, this is text, this is text5</textPath> 
+        </text> 
+    </svg>
+    <svg width="620" height="110">
+        <text x="30" y="90" 
+        style="font-family:'Leckerli One', cursive;
+                font-size: 50px;
+                stroke: #000000;
+                fill: #ED6E46;">This is text6</text>
+    </svg>
+    <svg height="300" width="500">
+        <text id="c1" x="100" y="90" fill="#ED6E46" font-size="50" font-family="'Montserrat', cursive">This is text7</text>
+        <animate xlink:href="#c1" attributeName="font-size" from="50" to="100" dur="4s" begin="mouseover" ></animate>
+        <animate xlink:href="#c1" attributeName="fill" from="#ff8900" to="#ff8900" dur="10s" values="#ff8900;#ef0d0d;#ebff00;#00ff14;#ff00a7;#ff8900" begin="mouseover"></animate>
+</svg>
+<svg width="1000" height="400">
+    <defs>
+        <pattern id="diagonalHatch" patternUnits="userSpaceOnUse" width="5" height="5">
+            <path d="M-2,3 l5,-7
+                     M0,6 l8,-5
+                     M3,8 l3,-3" 
+                  style="stroke:black; stroke-width:3;" />
+          </pattern>
+    </defs>
+    <text x="0" y="200"  font-size="200" fill="url(#diagonalHatch)">This is text8</text>
+</svg>
+</body>
+
+</html>

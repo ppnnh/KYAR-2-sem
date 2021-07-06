@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>laba2</title>
+ <style>#button input{background:darkgoldenrod; border-radius: 10px;}</style>
+</head>
+<body>
+   <script type='text/javascript'>
+   /*2 zadanie*/
+   function zadanie2(){
+    let a = prompt("Введите кол-во строк"," ");
+    let b = prompt("Введите кол-во столбцов"," ");
+    document.write("<table border= '1'>");
+    for (i=1; i<=a; i++) {
+      document.write("<tr>");
+    for (j=1; j<=b; j++){
+        document.write("<td>"+i*j+"</td>");}
+    document.write("</tr>");
+}
+document.write("</table>");
+   }
+
+
+
+//3 zadanie
+function zadanie3(){
+ document.write("<table border = '1'>");
+ document.write("</tr>");
+ document.write("<td>" + "Радиус" + "</td>");
+ document.write("<td>" + "Площадь круга" + "</td>");
+ document.write("<td>" + "Длина окружности" + "</td>");
+ let a=Number(prompt("Введите а")), b=Number(prompt("Введите b"));
+ let i=a;
+ do{
+  k=i.toFixed(2);
+  document.write("</tr>");
+  document.write("<td>" + k + "</td>");
+  document.write("<td>" + Math.round (Math.pow(k,2)* Math.PI) + "</td>");
+  document.write("<td>" + Math.round (2*Math.PI*k) + "</td>");
+  i=i+0.3;
+ }
+ while(i<=b)
+}
+
+
+//4 zadanie
+function zadanie4(){
+let x=Number(prompt("Введите а")), y=Number(prompt("Введите b"));
+
+
+document.write("<table border = '1'>");
+
+document.write("<tr>");
+document.write("<td>" + "Число" + "</td>");
+document.write("<td>" + "Метод" + "</td>");
+document.write("<td>" + "Результат" + "</td>");
+document.write("<td>" + "Описание метода" + "</td>");
+document.write("</tr>");
+
+document.write("<tr>");
+document.write("<td>" + x + "</td>");
+document.write("<td>" + "toString(16)" + "</td>");
+document.write("<td>" + x.toString(16) + "</td>");
+document.write("<td>" + "Строковое представление числа в 16-ричной системе счисления" + "</td>");
+document.write("</tr>");
+
+document.write("<tr>");
+document.write("<td>" + y + "</td>");
+document.write("<td>" + "toString(16)" + "</td>");
+document.write("<td>" + y.toString(16) + "</td>");
+document.write("<td>" + "Строковое представление числа в 16-ричной системе счисления" + "</td>");
+document.write("</tr>");
+
+document.write("<tr>");
+document.write("<td>" + x + "</td>");
+document.write("<td>" + "toExponential(4)" + "</td>");
+document.write("<td>" + x.toExponential(4) + "</td>");
+document.write("<td>" + "Представление числа в экспоненциальной форме с 4 знаками после точки" + "</td>");
+document.write("</tr>");
+
+document.write("<tr>");
+document.write("<td>" + y + "</td>");
+document.write("<td>" + "toExponential(4)" + "</td>");
+document.write("<td>" + y.toExponential(4) + "</td>");
+document.write("<td>" + "Представление числа в экспоненциальной форме с 4 знаками после точки" + "</td>");
+document.write("</tr>");
+
+document.write("<tr>");
+document.write("<td>" + x + "</td>");
+document.write("<td>" + "toFixed(2)" + "</td>");
+document.write("<td>" + x.toFixed(2)  + "</td>");
+document.write("<td>" + "представление числа в форме с фиксированным количеством цифр (2) после точки" + "</td>");
+
+document.write("</tr>");
+document.write("<td>" + y + "</td>");
+document.write("<td>" + "toFixed(2)" + "</td>");
+document.write("<td>" + y.toFixed(2) + "</td>");
+document.write("<td>" + "представление числа в форме с фиксированным количеством цифр (2) после точки" + "</td>");
+document.write("</tr>");
+
+document.write("<tr>");
+document.write("<td>" + x + "</td>");
+document.write("<td>" + "toPrecision(8)" + "</td>");
+document.write("<td>" + x.toPrecision(8) + "</td>");
+document.write("<td>" + "Представление числа с заданным общим количеством значащих цифр(8)" + "</td>");
+document.write("</tr>");
+
+document.write("<tr>");
+document.write("<td>" + y + "</td>");
+document.write("<td>" + "toPrecision(8)" + "</td>");
+document.write("<td>" + y.toPrecision(8) + "</td>");
+document.write("<td>" + "Представление числа с заданным общим количеством значащих цифр(8)" + "</td>");
+document.write("</table>");
+}
+</script>
+<div id="button"><input type='button' value='2 task' onclick='zadanie2()' />
+<input type='button' value='3 task' onclick='zadanie3()' />
+<input type='button' value='4 task' onclick='zadanie4()' /></div>
+</body>
+</html>

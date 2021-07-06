@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl"  href="3.xsl"?>
+	<SPECIALIZATION>
+		<POIT>
+			<UNIVERSITY>Витебский государственный университет имени П.М. Машерова</UNIVERSITY>
+			<PASSING>237</PASSING>
+			<PAGES>24</PAGES>
+			<CITY>Витебск</CITY>
+		</POIT>
+
+		<POIT>
+			<UNIVERSITY>Белорусский национальный технический университет</UNIVERSITY>
+			<PASSING>198</PASSING>
+			<PAGES>90</PAGES>
+			<CITY>Минск</CITY>
+		</POIT>
+		
+		<POIT>
+			<UNIVERSITY>Белорусский государственный университет информатики и радиоэлектроники</UNIVERSITY>
+			<PASSING>360</PASSING>
+			<PAGES>180</PAGES>
+			<CITY>Минск</CITY>
+		</POIT>
+	</SPECIALIZATION>

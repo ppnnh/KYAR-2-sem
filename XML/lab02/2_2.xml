@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="1.css"?>
+<!DOCTYPE note SYSTEM "2.xsd">
+	<SPECIALIZATION>
+		<POIT>
+			<UNIVERSITY>Витебский государственный университет имени П.М. Машерова</UNIVERSITY>
+			<PASSING>
+				<BUDGET>Бюджет 237</BUDGET>
+				<PAY>Платное 130</PAY>
+			</PASSING>
+			<PAGES>24</PAGES>
+			<CITY>Витебск</CITY>
+		</POIT>
+		<POIT>
+			<UNIVERSITY>Белорусский национальный технический университет</UNIVERSITY>
+			<PASSING>
+				<BUDGET>Бюджет 198</BUDGET>
+				<PAY>Платное -</PAY>
+			</PASSING>
+			<PAGES>90</PAGES>
+			<CITY>Минск</CITY>
+		</POIT>
+		<POIT>
+			<UNIVERSITY>Белорусский государственный университет информатики и радиоэлектроники</UNIVERSITY>
+			<PASSING>
+				<BUDGET>Бюджет 360</BUDGET>
+				<PAY>Платное 309 </PAY>
+			</PASSING>
+			<PAGES>180</PAGES>
+			<CITY>Минск</CITY>
+		</POIT>
+	</SPECIALIZATION>
